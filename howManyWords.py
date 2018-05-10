@@ -4,15 +4,18 @@
 
 
 
-file=open("engmix.txt").strip()
+file=open("engmix.txt")
 
 
 
 kindsawords=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
+
+
 for word in file:
-            kindsawords[len(word)] += 1
+    kindsawords[len(word.strip())-1] += 1
             
 
-print (kindsawords)
+for i in range (0,21):
+    print ("there are",kindsawords[i],"of",i,"- letter words.")
     
