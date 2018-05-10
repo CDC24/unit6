@@ -3,6 +3,10 @@
 #reverseFile.py - prints all file lines in reverse order
 
 
+file=open(input("what file do you want to reverse? "))
 
-file=open("engmix.txt")
+Lines = []
+
+for line in file:
+    Lines.append(line.strip())
 
