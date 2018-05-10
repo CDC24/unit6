@@ -4,7 +4,9 @@
 
 file=open("engmix.txt")
 
-len(longest)=5
+longest = ""
+
 for word in file:
-    if len(word)>=len(longest):
-    longest=word
+    if len(word) > len(longest):
+        longest = word
+print("The longest word is",longest)
