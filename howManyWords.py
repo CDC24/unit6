@@ -4,7 +4,7 @@
 
 
 
-file=open("engmix.txt")
+file=open("engmix.txt").strip()
 
 
 
