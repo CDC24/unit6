@@ -11,7 +11,6 @@ file=open("engmix.txt")
 kindsawords=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 for word in file:
-        if len(word) == i:
-            kindsawords[i-1] += 1
+            kindsawords[len(word)-1] += 1
 
     
