@@ -17,5 +17,5 @@ for word in file:
             
 
 for i in range (0,21):
-    print ("there are",kindsawords[i],"of",i,"- letter words.")
+    print ("there are",kindsawords[i],i,"- letter words.")
     
