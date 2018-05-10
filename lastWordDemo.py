@@ -1,12 +1,16 @@
 #Caleb Callaway
 #5/10/18
-#fileDemo.py - how to read a file
+#lastWordDemo.py - print the last word of each line of a file
 
 
 
-file=open("engmix.txt")
+file=open("fileDemo.py")
 
 
 for line in file:
-    if "cale" in line:
-        print (line.strip())   #removes extra spaces from \n in original file
+    words=line.split()
+    if len(words)>0:
+        print(words[-1])
+    else:
+        print()
+    
