@@ -9,4 +9,7 @@ Lines = []
 
 for line in file:
     Lines.append(line.strip())
+    Lines.reverse()
+for i in Lines:
+print(i)
 
