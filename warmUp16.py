@@ -6,10 +6,11 @@ file=open("engmix.txt")
 
 
 for line in file:
-    if len(line)>=2:
+    line = line.strip(0
+    if len(line.strip())>=2:
         list = line.split()
         if list[0]=="c" and list[-1]=="c":
-            print (line.strip())
-    if len(line)<2:
+            print (line)
+    elif len(line)<2:
         if "c" in line:
             print (line.strip())
