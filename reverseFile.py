@@ -8,8 +8,8 @@ file=open(input("what file do you want to reverse? "))
 Lines = []
 
 for line in file:
-    Lines.append(line.strip())
+    Lines.append(line.strip("\n"))
     Lines.reverse()
 for i in Lines:
-print(i)
+    print(i)
 
