@@ -5,12 +5,7 @@
 file=open("engmix.txt")
 
 
-for line in file:
-    line = line.strip(0
-    if len(line.strip())>=2:
-        list = line.split()
-        if list[0]=="c" and list[-1]=="c":
-            print (line)
-    elif len(line)<2:
-        if "c" in line:
-            print (line.strip())
+for stuff in file:
+    line = stuff.strip()
+    if len(line)>0 and line[0]=="c" and line[-1]=="c":
+        print(line)
