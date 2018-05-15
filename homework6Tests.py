@@ -47,14 +47,14 @@ best = ("")
 
 
 for line in file:
-    line = line.strip()
-    if letter in line:
-        lettcount=0
-        for letter in line:
+    word = line.strip()
+    lettcount=0
+    if letter in word:
+        for letter in word:
             lettcount+=1
     if lettcount>greatest:
         greatest = lettcount
-        best = line
+        best = word
 print (best)
 
 
