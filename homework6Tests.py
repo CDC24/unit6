@@ -7,8 +7,8 @@ file=open("engmix.txt")
 
 word = input ("enter a word: ")
 
-for line.strip() in file:
-    if word in file:
+for line in file:
+    if line.strip() == word:
         print ("Yes!",word,"is in the dictionary!")
         break
     else:
