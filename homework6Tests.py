@@ -19,12 +19,19 @@ for line in file:
 if IN == False:
     print ("Oof!",word,"is NOT in the dictionary!")
 """
-
+"""
 L = []
 for line in file:
     L.append(line.strip())
     
-num = int(input("Enter the number of the word you want: ))
+num = int(input("Enter the number of the word you want: "))
 
-print L[num+1]
+print (L[num-1])
+"""
+
+
+file = ("warmUp16.py")
+
+for line in file:
+    print (line.strip(),"!")
     
