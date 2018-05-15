@@ -7,10 +7,12 @@ file=open("engmix.txt")
 
 word = input ("enter a word: ")
 
+IN = False
 for line in file:
     if line.strip() == word:
         print ("Yes!",word,"is in the dictionary!")
+        IN = true
         break
-    else:
-        print ("Oof!",word,"is NOT in the dictionary!")
+if IN = False:
+    print ("Oof!",word,"is NOT in the dictionary!")
         
