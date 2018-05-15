@@ -5,6 +5,9 @@
 
 file=open("engmix.txt")
 
+
+
+"""
 word = input ("enter a word: ")
 
 IN = False
@@ -15,4 +18,13 @@ for line in file:
         break
 if IN == False:
     print ("Oof!",word,"is NOT in the dictionary!")
-        
+"""
+
+L = []
+for line in file:
+    L.append(line.strip())
+    
+num = int(input("Enter the number of the word you want: ))
+
+print L[num+1]
+    
