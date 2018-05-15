@@ -48,12 +48,8 @@ best = ("")
 
 for line in file:
     word = line.strip()
-    lettcount=0
-    if letter in word:
-        for letter in word:
-            lettcount+=1
-    if lettcount>greatest:
-        greatest = lettcount
+    if word.count(letter)>greatest:
+        greatest = word.count(letter)
         best = word
 print (best)
 
