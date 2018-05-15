@@ -11,8 +11,8 @@ IN = False
 for line in file:
     if line.strip() == word:
         print ("Yes!",word,"is in the dictionary!")
-        IN = true
+        IN = True
         break
-if IN = False:
+if IN == False:
     print ("Oof!",word,"is NOT in the dictionary!")
         
