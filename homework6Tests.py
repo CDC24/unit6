@@ -41,17 +41,17 @@ for line in file:
 
                 #part 4
 
-letter = input ("input the letter you want: ")
-greatest = (0)
-best = ("")
-
-
-for line in file:
-    word = line.strip()
-    if word.count(letter)>greatest:
-        greatest = word.count(letter)
-        best = word
-print (best)
+for letter in ('abcdefghijklmnopqrstuvwxyz'):
+    greatest = (0)
+    best = ("")
+    
+    
+    for line in file:
+        word = line.strip()
+        if word.count(letter)>greatest:
+            greatest = word.count(letter)
+            best = word
+    print (best)
 
 
 
