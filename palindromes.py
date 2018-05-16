@@ -9,10 +9,10 @@ for line in file:
     while i <20:
         line = line.strip()
         L = []
-        if L[0] == L[-1]:
-            for letter in line:
-                L.append(letter)
-            print(L.reverse)
-            i+=1
+        for letter in line:
+            L.append(letter)
+        NewL = L[:]
+    print(NewL[].reverse)
+    i+=1
     
     
