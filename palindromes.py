@@ -15,13 +15,12 @@ for line in file:
     print(NewL[].reverse)
     i+=1
 """
-i = 0
+
+
 for line in file:
-    while i<10:
-        line = line.strip()
-        reverse = ""
-        for ch in line:
-            reverse = ch+reverse
-        if reverse = line:
-            print (reverse)
-        i += 1
+    line = line.strip()
+    reverse = ""
+    for ch in line:
+        reverse = ch+reverse
+    if reverse == line:
+        print (reverse)
