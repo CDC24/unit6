@@ -12,6 +12,7 @@ longestWord = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","
 
 for line in file:
     line = line.strip()
+    split = line.split("")
     if line[0] = "a":
         if len(line)> len(longestWord[0]):
             longestWord[0] = line
