@@ -9,11 +9,10 @@ T = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s"
 longestWord = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
 
-
-for line in file:
-    line = line.strip()
-    split = line.split("")
-    if split[0] = "a":
-        if len(line)> len(longestWord[0]):
-            longestWord[0] = line
-print (longestWord[0])
+for i in range(0,25):
+    for line in file:
+        line = line.strip()
+        if len(line)>0 and line[0] == T[i]:
+            if len(line)> len(longestWord[i]):
+                longestWord[i] = line
+    print (longestWord[i])
