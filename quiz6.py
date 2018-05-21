@@ -56,9 +56,9 @@ for line in file:
             break
 """
 
+                                    #Program 5
 
-
-
+"""
 greatnum = 0
 word = ""
 
@@ -72,7 +72,7 @@ for line in file:
         greatnum == vowelcount(line)
         word = line
 print(word)
-
+"""
 
 
 
