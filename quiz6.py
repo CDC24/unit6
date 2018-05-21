@@ -24,6 +24,7 @@ for line in file:
 
 for line in file:
     line = line.strip()
-    if line[0] == line[4] and line[0] == line[8]:
-        print (line)
-        break
+    if len(line) >= 9:
+        if line[0] == line[4] and line[0] == line[8]:
+            print (line)
+            break
