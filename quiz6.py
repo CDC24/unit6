@@ -32,7 +32,8 @@ for line in file:
 
                                     #Program 3
 
-num = int(input("Enter a number: ")
+"""
+num = int(input("Enter a number: "))
 lett = input("Enter a letter: ")
 
 for line in file:
@@ -40,4 +41,16 @@ for line in file:
     if len(line) == num:
         if line[0] == lett:
             print (line)
+"""
+
+
+
+words = 0
+for line in file:
+    line = line.strip()
+    if len(line) >= 10:
+        words +=1
+        if words == 8000:
+            print (line)
+            break
 
