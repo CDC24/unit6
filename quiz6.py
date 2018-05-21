@@ -43,8 +43,9 @@ for line in file:
             print (line)
 """
 
+                                    #Program 4
 
-
+"""
 words = 0
 for line in file:
     line = line.strip()
@@ -53,4 +54,24 @@ for line in file:
         if words == 8000:
             print (line)
             break
+"""
+
+
+
+
+vowels = "aeiou"
+greatnum = 0
+word = ""
+
+for line in file:
+    line = line.strip()
+    if line.count(vowels) > greatnum:
+        greatnum == line.count(vowels)
+        word = line
+print(word)
+
+
+
+
+
 
