@@ -59,14 +59,17 @@ for line in file:
 
 
 
-vowels = "aeiou"
 greatnum = 0
 word = ""
 
+def vowelcount(part):
+    return (part.count("a") + part.count("e") + part.count("i") + part.count("o") + part.count("u"))
+    
+
 for line in file:
     line = line.strip()
-    if line.count(vowels) > greatnum:
-        greatnum == line.count(vowels)
+    if vowelcount(line) > greatnum:
+        greatnum == vowelcount(line)
         word = line
 print(word)
 
