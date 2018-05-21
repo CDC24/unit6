@@ -21,10 +21,23 @@ for line in file:
 
                                     #Program 2
 
-
+"""
 for line in file:
     line = line.strip()
     if len(line) >= 9:
         if line[0] == line[4] and line[0] == line[8]:
             print (line)
             break
+"""
+
+                                    #Program 3
+
+num = int(input("Enter a number: ")
+lett = input("Enter a letter: ")
+
+for line in file:
+    line = line.strip()
+    if len(line) == num:
+        if line[0] == lett:
+            print (line)
+
